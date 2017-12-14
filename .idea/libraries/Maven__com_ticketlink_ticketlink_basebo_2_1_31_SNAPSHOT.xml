@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ticketlink:ticketlink-basebo:2.1.31-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/maven/repository/com/ticketlink/ticketlink-basebo/2.1.31-SNAPSHOT/ticketlink-basebo-2.1.31-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/maven/repository/com/ticketlink/ticketlink-basebo/2.1.31-SNAPSHOT/ticketlink-basebo-2.1.31-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/maven/repository/com/ticketlink/ticketlink-basebo/2.1.31-SNAPSHOT/ticketlink-basebo-2.1.31-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

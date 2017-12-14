@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: com.ticketlink:ticketlink-basebo:2.1.30-SNAPSHOT">
-    <CLASSES>
-      <root url="jar://D:/git/ticketlink-integrate/ticketlink-basebo/pom.xml!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC>
       <root url="jar://D:/git/ticketlink-integrate/ticketlink-basebo/ticketlink-basebo-2.1.30-SNAPSHOT-javadoc.jar!/" />
     </JAVADOC>
