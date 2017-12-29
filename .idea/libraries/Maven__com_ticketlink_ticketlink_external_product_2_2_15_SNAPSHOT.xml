@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ticketlink:ticketlink-external-product:2.2.15-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/maven/repository/com/ticketlink/ticketlink-external-product/2.2.15-SNAPSHOT/ticketlink-external-product-2.2.15-20171228.083211-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/maven/repository/com/ticketlink/ticketlink-external-product/2.2.15-SNAPSHOT/ticketlink-external-product-2.2.15-20171228.083211-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/maven/repository/com/ticketlink/ticketlink-external-product/2.2.15-SNAPSHOT/ticketlink-external-product-2.2.15-20171228.083211-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
