@@ -1,3 +1,5 @@
+package kata;
+
 import static java.util.Comparator.comparing;
 
 import java.util.Arrays;

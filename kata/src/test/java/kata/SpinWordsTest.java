@@ -1,5 +1,8 @@
+package kata;
+
 import static org.junit.Assert.assertEquals;
 
+import kata.SpinWords;
 import org.junit.Test;
 
 /**

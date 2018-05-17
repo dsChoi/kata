@@ -1,5 +1,8 @@
+package kata;
+
 import static org.junit.Assert.assertEquals;
 
+import kata.Kata;
 import org.junit.Test;
 
 /**

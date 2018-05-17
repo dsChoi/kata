@@ -1,5 +1,8 @@
+package kata;
+
 import static org.junit.Assert.assertEquals;
 
+import kata.Line;
 import org.junit.Test;
 
 public class LineTest {
@@ -30,7 +33,7 @@ public class LineTest {
 
 	@Test
 	public void test6() {
-		assertEquals("NO", Line.Tickets(new int[]{25, 25, 50, 25, 100}));
+ 		assertEquals("NO", Line.Tickets(new int[]{25, 25, 50, 25, 100}));
 	}
 
 	@Test
