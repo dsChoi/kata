@@ -1,5 +1,5 @@
 *.class
-
+*.iml
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -13,12 +13,11 @@ hs_err_pid*
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
-*.iml
 
 ## Directory-based project format:
 .idea/
 # if you remove the above rule, at least ignore the following:
-
+.idea/*
 # User-specific stuff:
 # .idea/workspace.xml
 # .idea/tasks.xml

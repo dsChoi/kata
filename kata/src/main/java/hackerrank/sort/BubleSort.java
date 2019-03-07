@@ -11,14 +11,14 @@ public class BubleSort {
 
 		int swapCount = 0;
 
-		for (int i = 0; i < arr.length ; i++) {
-			for (int j = i+1; j < arr.length; j++) {
-				int ivalue = arr[i];
-				int jValue = arr[j];
+		for (int i = 0; i < a.length ; i++) {
+			for (int j = i+1; j < a.length; j++) {
+				int ivalue = a[i];
+				int jValue = a[j];
 				if (ivalue > jValue) {
 					int temp = ivalue;
-					arr[i] = jValue;
-					arr[j] = temp;
+                    a[i] = jValue;
+                    a[j] = temp;
 					swapCount = swapCount + 1;
 				}
 			}
@@ -26,8 +26,8 @@ public class BubleSort {
 		}
 
 		System.out.println("Array is sorted in " + swapCount + " swaps.");
-		System.out.println("First Element: " + arr[0]);
-		System.out.println("Last Element: " + arr[arr.length - 1]);
+		System.out.println("First Element: " + a[0]);
+		System.out.println("Last Element: " + a[a.length - 1]);
 
     }
 
