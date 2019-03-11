@@ -9,6 +9,25 @@ public class BubleSort {
     // Complete the countSwaps function below.
     static void countSwaps(int[] a) {
 
+		int swapCount = 0;
+
+		for (int i = 0; i < a.length ; i++) {
+			for (int j = i+1; j < a.length; j++) {
+				int ivalue = a[i];
+				int jValue = a[j];
+				if (ivalue > jValue) {
+					int temp = ivalue;
+                    a[i] = jValue;
+                    a[j] = temp;
+					swapCount = swapCount + 1;
+				}
+			}
+
+		}
+
+		System.out.println("Array is sorted in " + swapCount + " swaps.");
+		System.out.println("First Element: " + a[0]);
+		System.out.println("Last Element: " + a[a.length - 1]);
 
     }
 
