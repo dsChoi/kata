@@ -2,43 +2,35 @@ package hackerrank;
 
 
 import java.io.*;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.format.DateTimeFormatter;
 
 public class DayOfProgrammmer {
 
     // Complete the dayOfProgrammer function below.
     static String dayOfProgrammer(int year) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        // for all cases after 1918 as I am starting from 1st day of year
+        int plusDay = 255;
 
-        Calendar instance = GregorianCalendar.getInstance();
-
-
-        int plusDate = 255;
-        if(year <= 1918){
-
-
-            plusDate = 254;
+        if (year == 1918) {
+            //18년은 1월 31일 이후 2월 14일이므로 13일을 더해줌
+            plusDay = plusDay + 13;
+        } else if (year < 1918) {
+            // 윤년 계산 마이너스 처리
+            // 나머지 윤년은 알아서 처리해줌.
+            if (year % 4 == 0 && year % 100 == 0) {
+                plusDay = plusDay - 1;
+            }
         }
 
-        instance.set(year, 0, 1);
-        instance.add(Calendar.DAY_OF_YEAR, plusDate);
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
-
-        return dateFormat.format(instance.getTime());
+        LocalDate date = LocalDate.of(year, 1, 1);
+        LocalDate dayOfProgrammer = date.plusDays(plusDay);
 
 
+        return formatter.format(dayOfProgrammer);
     }   // Complete the dayOfProgrammer function below.
-    static String dayOfProgrammer2(int year) {
 
-        LocalDate localDate =  LocalDate.of(year, 1,1);
-
-
-        return null;
-
-    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
