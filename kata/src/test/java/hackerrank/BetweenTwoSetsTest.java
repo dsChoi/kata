@@ -1,5 +1,6 @@
 package hackerrank;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -15,6 +16,7 @@ public class BetweenTwoSetsTest {
         List<Integer> b = Arrays.asList(16, 32, 96);
         int totalX = BetweenTwoSets.getTotalX(a, b);
         System.out.println(totalX);
+        Assertions.assertThat(totalX).isEqualTo(3);
     }
 
 
@@ -23,7 +25,7 @@ public class BetweenTwoSetsTest {
         List<Integer> a = Arrays.asList(3, 4);
         List<Integer> b = Arrays.asList(24, 48);
         int totalX = BetweenTwoSets.getTotalX(a, b);
-        System.out.println(totalX);
+        Assertions.assertThat(totalX).isEqualTo(2);
     }
 
 }
