@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+
 //https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 public class BreakingTheRecords {
     private static final Scanner scanner = new Scanner(System.in);
@@ -14,14 +15,9 @@ public class BreakingTheRecords {
         int minChange = 0;
         int maxChange = 0;
 
-        int min = 0;
-        int max = 0;
-        int index = 0;
+        int min = scores[0];
+        int max = scores[0];
         for (int score : scores) {
-            if (index == 0) {
-                min = score;
-                max = score;
-            }
             if (score > max) {
                 max = score;
                 maxChange++;
@@ -30,8 +26,6 @@ public class BreakingTheRecords {
                 min = score;
                 minChange++;
             }
-            index++;
-
         }
 
         return new int[]{maxChange, minChange};
